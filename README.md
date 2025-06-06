@@ -26,8 +26,13 @@ To use or continue editing this theme:
 4. Run `zcli theme preview` to test locally.
 
 To publish, you will need to go through a specific way : 
+
+    Before publishing, make sure you modify the theme version! otherwise, the theme will be rejected by Zendesk
+    
+    Open `manifest.json` and modify the version latest number
+
 1. In Zendesk Help Center admin, go to the `/theming/workbench` page
-2. Find the theme with name `Copenhagen - Custom Theme` and open its contextual menu.
+2. Find the theme with name `Copenhagen - Custom Theme` and open its contextual menu. (should be the active theme)
 3. Click on `Update from Github`
 
 ## Notes
