@@ -24,7 +24,11 @@ To use or continue editing this theme:
     - Email : *see Dashlane **Zendesk Theme Credentials***
     - Token :  *see Dashlane **Zendesk Theme Credentials***
 4. Run `zcli theme preview` to test locally.
-5. Run `zcli theme publish` to upload to your Help Center.
+
+To publish, you will need to go through a specific way : 
+1. In Zendesk Help Center admin, go to the `/theming/workbench` page
+2. Find the theme with name `Copenhagen - Custom Theme` and open its contextual menu.
+3. Click on `Update from Github`
 
 ## Notes
 
