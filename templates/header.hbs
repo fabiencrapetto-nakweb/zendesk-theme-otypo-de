@@ -4,12 +4,11 @@
   <div class="wrapper">
     <div class="logo">
       <a href="https://www.otypo.de" target="_blank">
-        <img width="114px" src="{{asset 'logo.svg'}}" alt="{{t 'home_page' name=help_center.name}}" />
-        {{#if settings.show_brand_name}}
-          <span aria-hidden="true">{{help_center.name}}</span>
-        {{/if}}
+        <img width="114px" src="{{settings.logo}}" alt="{{t 'home_page' name=help_center.name}}" />
       </a>
-      {{#link 'help_center' class='help-center-link'}}Help Center{{/link}}
+      {{#if settings.show_brand_name}}
+        {{#link 'help_center' class='help-center-link'}}Help Center{{/link}}
+      {{/if}}
     </div>
 
     <div class="nav-wrapper-desktop --centered">
