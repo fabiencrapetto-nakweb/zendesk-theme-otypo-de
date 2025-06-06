@@ -12,19 +12,20 @@
       {{#link 'help_center' class='help-center-link'}}Help Center{{/link}}
     </div>
 
+    <div class="nav-wrapper-desktop --centered">
+      <nav class="links-nav" id="links-nav" aria-label="{{t 'user_navigation'}}">
+        <ul class="links-nav-list">
+          <li><a href="https://www.otypo.de/schilder" target="_blank">Schilder</a></li>
+          <li><a href="https://www.otypo.de/stempel" target="_blank">Stempel</a></li>
+        </ul>
+      </nav>
+    </div>
+
     <div class="nav-wrapper-desktop">
       <nav class="user-nav" id="user-nav" aria-label="{{t 'user_navigation'}}">
         <ul class="user-nav-list">
-          <li>{{link 'community'}}</li>
-          <li><a class="button" href="https://www.otypo.de"></a></li>
-          <li>{{link 'new_request' class='submit-a-request'}}</li>
-          {{#unless signed_in}}
-            <li>
-              {{#link "sign_in" class="sign-in"}}
-                {{t 'sign_in'}}
-              {{/link}}
-            </li>
-          {{/unless}}
+          <li><a class="button button-otypo button-secondary-light" href="https://www.otypo.de/angebot" target="_blank">Angebot einholen</a></li>
+          <li>{{link 'new_request' class='button button-otypo button-tertiary'}}</li>
         </ul>
       </nav>
       {{#if signed_in}}

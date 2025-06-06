@@ -174,6 +174,7 @@
         {{/if}}
       </article>
 
+      {{#if settings.show_post_sharing}}
       <section class="comment-overview" id="comment-overview">
         <h2 class="comment-heading">
           {{t 'comments'}}
@@ -195,7 +196,9 @@
           </div>
         {{/if}}
       </section>
+      {{/if}}
 
+      {{#if settings.show_post_sharing}}
       <ul id="comments" class="comment-list">
         {{#each comments}}
           <li id="{{anchor}}" class="comment">
@@ -299,9 +302,11 @@
           </li>
         {{/each}}
       </ul>
+      {{/if}}
 
       {{pagination}}
 
+      {{#if settings.show_post_sharing}}
       <section class="post-comments">
         {{#form 'comment' class='comment-form hbs-form'}}
           <div class="avatar comment-avatar">
@@ -317,8 +322,11 @@
           </div>
         {{/form}}
       </section>
+      {{/if}}
 
+      {{#if settings.show_post_sharing}}
       <p class="comment-callout">{{comment_callout}}</p>
+      {{/if}}
     </div>
 
     <section class="post-sidebar">
